@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body {
+            background-color: rgb(121, 28, 0);
+            color: white;
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com o DOM</h1>
+    <p id="seila">Sei lá boy</p>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JS</p>
+    <p name="A">oni-chan</p>
+    <div>Clique em mim</div>
+    <script>
+        var corpo = document.body
+        var p = document.getElementsByTagName('p')[2] //tem 2 p por isso coloquei 0 pq é igual a primeira tag p
+        //window.document.write('Olá mundo ')
+        //window.document.write(window.document.URL)
+        corpo.style.color = "White"     //mema coisa q css ali em cima
+        corpo.style.background = "Blue"     //mema coisa
+        p.style.color = "black"
+        document.write(`Está escrito: ` + p.innerText + ` <br>Assim fica em inner HTML: ` + p.innerHTML )
+        var sei = document.getElementById('seila')
+        //sei.innerText="Estou esperando mané..."
+        document.write('<br>Meu paragrafo por id: ' + seila.innerText)
+        var vc = document.getElementsByName('A')[0]
+        document.write('<br> Voce é: ' + vc.innerText)
+    
+    
+    
+    </script>
+</body>
+</html>
